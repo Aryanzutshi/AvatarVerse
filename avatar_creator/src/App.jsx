@@ -1,5 +1,5 @@
-import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
 
 function App() {
   return (
@@ -12,8 +12,8 @@ function App() {
         <color attach="background" args={["#333333"]} />
         <OrbitControls />
         <mesh>
-          <boxGeometry args={[0.5, 0.5, 0.5]} />
           <meshNormalMaterial />
+          <boxGeometry args={[1.5, 1.5, 1.5]} />
         </mesh>
       </Canvas>
     </>
